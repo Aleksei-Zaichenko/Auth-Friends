@@ -11,7 +11,7 @@ export const Login = props => {
             .then(res => {
                 console.log(res);
                 localStorage.setItem('token', JSON.stringify(res.data.payload));
-                this.props.history.push('/friends');
+                props.history.push('/friends');
             })
             .catch(err => console.log(err.response))
     };
@@ -21,7 +21,7 @@ export const Login = props => {
             ...credentials,
             [e.target.name]: e.target.value
         });
-        console.log(credentials)
+        //console.log(credentials)
     };
 
     return (

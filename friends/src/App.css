@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.friends-list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.friends-list .each-friend{
+  width: 33.2%;
+  border: 1px solid gainsboro;
+}
